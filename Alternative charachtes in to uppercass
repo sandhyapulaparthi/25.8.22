@@ -1,0 +1,2 @@
+# 25.8.22
+int main() {          char str[30];     int i;     printf("Enter String : ");     gets(str);      for(i = 0; str[i] != '\0'; i++)     {        if(i%2==0){         if(str[i]>64 &amp;&amp; str[i]&lt;91 )             str[i]+=32;         }         else{             if(str[i]>96 &amp;&amp; str[i]&lt;123 )             str[i]-=32;         }      }     printf("\n%s", str);            return 0;
